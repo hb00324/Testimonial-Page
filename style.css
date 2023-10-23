@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Sora:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --ff: 'Sora', sans-serif;
+    --fsm: 12px;
+    --fmx: 18px;
+    --fmd: 20px;
+    --fxl: 36px;
+}
+
+.wrap {
+    background-color: #FAFAF9;
+    height: 100vh;
+    padding-top:3em;
+}
+
+.container {
+    padding-top: 5em;
+}
+
+h1 {
+    font-family: var(--ff);
+    font-size: var(--fxl);
+    font-weight: 800;
+}
+
+.main p {
+    font-family: var(--ff);
+    font-size: var(--fmd);
+    line-height: 2rem;
+    color: #52525A;
+}
+
+
+.main ul li {
+    position: relative;
+    line-height: 2em;
+    color: #52525A;
+    list-style-type: none;
+    margin-left: -2em;
+}
+
+.item {
+    width: 300px;
+    background-color: #FFFFFF;
+    padding:1.5em 2em;
+}
+
+.item section h2 {
+    font-family: var(--ff);
+    font-size: var(--fmd);
+}
+
+.item section p {
+    font-family: var(--ff);
+    font-size: var(--fsm);
+}
+
+header {
+    width: 100%;
+}
+
+header .logo {
+    display: inline-block;
+    width: 30%;
+}
+
+header .logo img {
+    width: 100%;
+}
+
+header .score {
+    display: inline-block;
+    margin-left: 0.5rem;
+}
+
+.Card {
+    position: relative;
+}
+
+svg.start-bg{
+    background-color: #F5C044;
+    scale: 1.2;
+}
+
+@media screen and (max-width:1075px) {
+    .wrap{
+        height: 100%;
+        padding-top:0;
+    }
+    .main p{
+        font-size: var(--fmx);
+    }
+    .main ul li {
+        font-size:var(--fsm);
+    }
+}
